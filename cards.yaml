@@ -1,0 +1,1200 @@
+####### Start of basic/unthemed cards, mostly by Adam. #############
+
+## Tommy's cards ##
+
+Nimble Dryad:
+    Gold: 2
+    Health: 2
+    Attack: 1
+    Range: 1
+    Movement: 2
+    Description: 'When this unit deals damage to another unit, that unit has Movement 0 until your next turn.'
+
+Feeble Welp:
+    Gold: 2
+    Health: 2
+    Attack: 1
+    Range: 2
+    Movement: 2
+    Description: "As far as welps go, he is not very strong."
+
+#(Seems very strong, might need to adjust cost)
+War Priest:
+    Gold: 1
+    Miracle: 1
+    Health: 3
+    Attack: 1
+    Range: 1
+    Movement: 2
+    Description: "Channel (3 Gold): All units in adjacent squares have +1 attack."
+
+General Kaz:
+    Gold: 5
+    Miracle: 3
+    Health: 4
+    Attack: 3
+    Range: 2
+    Movement: 2
+    Description: 'On Summon: Two target friendly units gain +2 Attack. You may move those units up to one square.'
+#(Strong but meant to end games. Values could use adjusting.)
+
+
+Wrassler:
+    Gold: 1
+    Miracle: 2
+    Health: 3
+    Attack: 0
+    Range: 1
+    Movement: 2
+    Description: Enemy units in range have Movement 0.
+
+Frenzied Acolyte:
+    Gold: 2 
+    Health: 1 
+    Attack: 3
+    Range: 2
+    Movement: 3
+    Description: 'When this unit deals damage to another unit, it deals 1 damage to itself.'
+#(Meant to be an aggro card where if it's health is buffed becomes strong as hell)
+
+False Despot:
+    Gold: 6 
+    Miracle: 2
+    Health: 1
+    Attack: 1
+    Range: 2
+    Movement: 2 
+    Description: "Sentinel. When you summon this unit, you may swap it's Attack and Health with another target unit."
+
+# (Pseudo Removal that also can act as a later game wall)
+Pilfered Gains:
+    Miracle: 0
+    Description: "Gain 2 Gold this turn, lose 2 Gold next turn. 2 Gold: Draw a card."
+    Trait: [Cantrip, Limited]
+
+# Spells
+
+Minor Penance:
+    Gold: 1
+    Image: https://cdn0.vox-cdn.com/thumbor/8v6MoNAV1N1pGN4GsaMv-9mOBBQ=/0x87:2048x1452/1280x854/cdn0.vox-cdn.com/uploads/chorus_image/image/46021482/16933271252_0c16113d35_k.0.0.jpg
+    Description: "Deal 1 damage to a unit with miracle cost 0. 2 Gold: Draw a card."
+#AO=feels solid, if there are alot of good 1hp creatures it mgiht neeed nerf but meh...#
+#AD- nerfed thanks to Tom.
+Major Penance:
+    Miracle: 1
+    Image: http://vignette4.wikia.nocookie.net/finalfantasy/images/4/43/FFTA2_Holy_Strike.png/revision/latest?cb=20120421034334
+    Description: "Deal 3 damage to target unit. 3 Gold: Draw a card."
+#AO- DANK
+
+Wartime Economy:
+    Gold: 3
+    Description: "Give a unit +1 attack. Until end of turn that unit gets +1 Range."
+    Image: http://www.ecossedirect.com/files/5413/2343/2423/health-care.png
+
+Supernatural Reach:
+    Miracle: 1
+    Description: Target unit gets +1 Range. Draw a card.
+    Image: http://www.ecossedirect.com/files/5413/2343/2423/health-care.png
+
+Healthcare:
+    Gold: 3
+    Description: Target unit gets +2 Health. Draw a card.
+    Image: http://www.ecossedirect.com/files/5413/2343/2423/health-care.png
+    Traits: [Cantrip]
+    # AO-man I love cantrips. we shall see if +2 hp is a lot once the game develops i guess
+
+## UNIT DAMAGE/REMOVAL SPELLS ##
+
+Forced Fight:
+    Gold: 3
+    Image: "http://www.fairviewparkschools.org/wp-content/uploads/2014/10/wrestling.png"
+    Description: Target friendly unit and target enemy unit attack each other.
+
+Gallanthor's Fireball:
+    Gold: 3
+    Miracle: 1
+    Image: http://vignette4.wikia.nocookie.net/mario/images/f/fa/494px-Fireball_Artwork_-_Super_Mario_3D_World.png
+    Description: "Blast(3x3): 2 damage. 1 miracle: Destroy a Structure."
+#AO- not too sure about the second effect. maybe increse blast radius? we should probably test it first though #
+#AD- Splitting into THREE spells and changing it to be against a meta that doesnt exist yet. Yay variety! #
+    Traits: ["BasicBlast(2/deck)"]
+
+Saliralion's Iceblast:
+    Gold: 3
+    Miracle: 1
+    Image: http://vignette4.wikia.nocookie.net/mario/images/f/fa/494px-Fireball_Artwork_-_Super_Mario_3D_World.png
+    Description: "Blast(3x3): 2 damage. 1 Miracle: Increase blast area to 4x3."
+    Traits: ["BasicBlast(2/deck)"]
+ 
+Momo's Saltball:
+    Gold: 3
+    Miracle: 1
+    Image: http://vignette4.wikia.nocookie.net/mario/images/f/fa/494px-Fireball_Artwork_-_Super_Mario_3D_World.png
+    Description: "Blast(3x3): 2 damage. 1 Miracle: Deal damage 1 additional damage."   
+    Traits: ["BasicBlast(2/deck)"]
+
+Weak of Faith:
+    Miracle: 1
+    Image: http://images.sodahead.com/blogs/000265949/Angry-God-1266884192_xlarge.jpeg
+    Description: 'Destroy target unit that was summoned last turn, with miracle cost 1 or less.'
+    #AO- feels like the most solid spot removal atm. we will toy with the cost and conditions later #
+ 
+Minor Plague:
+    Gold: 5
+    Miracle: 1
+    Image: http://vignette4.wikia.nocookie.net/finalfantasy/images/4/43/FFTA2_Holy_Strike.png/revision/latest?cb=20120421034334
+    Description: "Deal 2 damage to all enemy units on your side."
+
+Ultimate Penance:
+    Miracle: 1
+    Image: http://vignette4.wikia.nocookie.net/finalfantasy/images/4/43/FFTA2_Holy_Strike.png/revision/latest?cb=20120421034334
+    Description: Destroy target unit with miracle cost 2 or 3.
+
+## IMPROVE-MY-HAND SPELLS ##
+
+Divine Vision:
+    Miracle: 2
+    Description: "Draw 2 cards. Gain 1 gold for every enemy unit."
+    Image: https://s3.amazonaws.com/rapgenius/1359609685_ar124206886062105.gif
+    #AO-not sure if nerf needed but drawing 3 cards and getting 2 xtra gold as soon as turn 2 hits seems goooood#
+    #AD-changed it up. 
+
+Crowd Draw:
+    Gold: 3
+    Description: "Draw 2 cards. 3 gold: Draw a card."
+    Image: https://cdn3.iconfinder.com/data/icons/eldorado-stroke-navigation/40/people_crowd-512.png
+    #AO- good ol card advantage. love me some 3 for 1s#
+
+# Probably hold off on truly balancing this card until much more cards are made.
+Recipe for Revival:
+    Miracle: 1
+    Description: Return one of your played cards to your hand. If it costs less 4 gold or less, pay 1 more miracle to ignore the cost and play it.
+    Image: http://i400.photobucket.com/albums/pp87/yugiaz/Y-M/MonsterReborn0.jpg
+# AO- could be op but really hard to say. gotta wait for someone to abuse it ha#
+Religious Movement:
+    Gold: 2
+    Description: "Discard a card, draw 2 cards. 3 Gold: Draw an additional card."
+    Image: http://emp.trincoll.edu/~lpolate/mic/shas/index_files/ovadia_rally.jpg
+    #AO- good#
+
+Questionable Inheritance: # Gold-for-miracle should not be straight-forward.
+    Gold: 0
+    Description: "Apply to a friendly unit with miracle cost 1 or above. Ritual Sacrifice: Gain 4 gold. Draw a card."
+    Image: http://furm.org/images/artModel_inheritance.png
+    Traits: [Ritual]
+#AO- ok i see this 1 or more miracle cost pattern serves to seperate normal creatures from the divine ones. lets keep it that way#
+# You have to know you'll have a 1-cost friendly unit that won't get sniped, basically.
+# Most snipes take 1miracle/some gold/1card, so you juggle the snipe being more than you invested.
+
+## UNIT IMMEDIATE MOVEMENT SPELLS ##
+
+Soulswap:
+    Gold: 4
+    Description: Swap the location of two units. They cannot move or attack this turn.
+    #AO-not sure now to make this card fair atm but If the card sacrificed one of the creatures as a cost I would still play the crap out of it.#
+
+Divine Nudge:
+    Gold: 3
+    Description: 'Move target unit one square OR move target friendly unit 2 squares, and that unit cannot attack.'
+    #AO-cool! remember its very strong for setting up kills on board by pushing enemies within your range. #
+
+Teleport Curse:
+    Gold: 1
+    Miracle: 1
+    Description: "Move an enemy unit to the start of its lane. 1 Miracle: Move that unit anywhere on the board instead."
+    #AO-first effect A1. second one kinda scary but we shall see during tests
+    #AD-If it's a removal that involves board play, I'm about it.
+    #AD-However in interest of keeping 'nudge' interesting, I have made it +2 miracle
+
+Forced March:
+    Gold: 2
+    Image: http://help.strongholdkingdoms.com/images/a/a2/Forced_march.png
+    Description: 'Move two friendly units one square. They cannot attack.'
+
+Blink:
+    Gold: 3
+    Description: 'Move target friendly unit two squares with Flight. It cannot attack. Draw a card.'
+
+## STRUCTURE BUFFS ##
+
+Temple Guards:
+    Gold: 1
+    Image: http://d.christiantoday.com/en/full/13371/security-guards-outside-the-national-evangelical-church-in-basra.jpg
+    Description: All cities that did not previously have armour have +2 armour. Pay 3 more gold to draw a card.
+
+Shield the Pious:
+    Gold: 6
+    Miracle: 3
+    Image: http://archangel666.weebly.com/uploads/5/7/7/2/5772598/1450158.jpeg?260
+    Description: "Ritual: Target 0 miracle friendly unit gains Proxy (Damage to unit also applies to cities. Until unit dies, all cities have Aegis)."
+    Traits: [Ritual, Limited]
+
+Arm the Pious:
+    Gold: 3
+    Image: http://archangel666.weebly.com/uploads/5/7/7/2/5772598/1450158.jpeg?260
+    Description: Give each city Counter(2 damage, 1 range) until it is invaded. Draw a card.
+#AO- very nice! if it proves to be too weak due to having 3 diff temples. try upping cost and making it give all 3 of them counter2 #
+#AD- added a kicker for now. Will need recosting eventually
+#AD- meh all cities it is.
+
+## UNIT BUFFS ##
+
+Surefire Charge:
+    Gold: 2
+    Miracle: 1
+    Description: Target friendly unit may attack this turn, if they have not. They may not attack again this turn, even due to card effects.
+
+Twinstrike:
+    Miracle: 1
+    Description: Follower may attack an additional unit this turn.
+    Image: http://www.crimetv.com/themes/crimetv-red/images/right-slash.png
+
+Arsonist:
+    Miracle: 1
+    Description: "Either: Destroy a structure OR If a city was invaded this turn, do 3 faith damage."
+    Image: http://www.crimetv.com/themes/crimetv-red/images/right-slash.png
+
+Protection:
+    Gold: 0
+    Image: http://pngimg.com/upload/shield_PNG1268.png
+    Description: "Friendly unit that currently has 1 attack: Gain Aegis. Pay 3 more gold to repeat once."
+
+Soulbow:
+    Gold: 2
+    Miracle: 1
+    Description: "Target unit gains '2 Gold: Soulstrike 1'."
+    Image: http://img3.wikia.nocookie.net/__cb20130127002436/civilization/images/e/eb/Great_prophet_%28Civ5%29.png
+
+Minor Favour:
+    Miracle: 1
+    Description: "Choose one, unit gains: Aegis(1 turn) or Sentinel."
+    Image: http://img3.wikia.nocookie.net/__cb20130127002436/civilization/images/e/eb/Great_prophet_%28Civ5%29.png
+
+Prophet of Struggle:
+    Gold: 4
+    Miracle: 1
+    Description: Target unit gains +1 attack, +2 health, +1 movement.
+    Image: http://img3.wikia.nocookie.net/__cb20130127002436/civilization/images/e/eb/Great_prophet_%28Civ5%29.png
+#AO- my man #
+
+Prophet of Urgence:
+    Gold: 4
+    Miracle: 2
+    Description: Target unit gains Aegis and charge for one turn, +2 attack and +2 movement.
+    Image: http://img3.wikia.nocookie.net/__cb20130127002436/civilization/images/e/eb/Great_prophet_%28Civ5%29.png
+
+Divine Inspiration: # This may eventually be relevant to the meta.
+    Miracle: 1
+    Description: Trigger target Ritual.
+    Image: http://www.divinelivingbook.com/uploads/3/9/6/4/3964022/3672409.jpg
+#AO- sweet ass combo piece. might need to keep power of rituals in check cause this #
+#AD- maybe have a form of ritual this can't speed up but not sure #
+
+#Magenta's Cruel Haste:
+#    Gold: 0
+#    Miracle: 2
+#    Image: http://www.heroesfire.com/images/wikibase/icon/talents/foresight.png
+#    Description: Give a friendly unit double movement this turn. The unit takes double damage from attacks next turn.
+
+#Kokundoo's Perfect Haste:
+#    Gold: 2
+#    Miracle: 2
+#    Image: http://vignette4.wikia.nocookie.net/lolfantasy/images/1/1e/Advanced_Boots_of_Swiftness.png/revision/latest?cb=20140825024134
+#    Description: Give a friendly unit double movement this turn. 
+
+# Don't like these right now.
+
+## SEARCH SPELLS ##
+
+Ritual Festival:
+    Miracle: 1
+    Description: "Ritual: Bring a spell card of your choice from your deck to your hand."
+    Image: http://syntress.wpengine.netdna-cdn.com/wp-content/uploads/2014/06/icon-staff.png
+    Traits: [Ritual, Limited]
+
+Effective Recruiting: # Not interesting until later.
+    Gold: 3
+    Description: Search for a card of a target unit type. 
+    Image: http://syntress.wpengine.netdna-cdn.com/wp-content/uploads/2014/06/icon-staff.png
+#AO- we should stick to a handful of selected unit types and use only those as opposed to making up a new race for each card. card is good#
+#AD- made it more potent for combos by just making it take miracle. #
+
+## DEBUFF SPELLS ##
+
+Invisible Trap:
+    Gold: 3
+    Description: Target enemy unit is Snared.
+    Image: http://www.screenrelish.com/wp-content/uploads/2015/04/Invisible-Man1.jpg
+
+Divine Severence:
+    Gold: 3
+    Description: "Target an enemy unit with Aegis: remove Aegis and draw a card."
+    Image: http://www.divinelivingbook.com/uploads/3/9/6/4/3964022/3672409.jpg
+
+Demotivation:
+    Gold: 1
+    Description: "Target enemy unit has 1 movement next turn. 2 Gold: Prevent that unit from moving, and draw a card."
+    Image: http://www.divinelivingbook.com/uploads/3/9/6/4/3964022/3672409.jpg
+
+Cursed Winter:
+    Gold: 5
+    Image: http://www.agilityrecovery.com/wp-content/uploads/2014/01/WinterWeather.jpg
+    Description: Snare up to two adjacent enemy units.
+
+Piety Through Strife:
+    Gold: 1
+    Description: Cities have Defence(-4 damage, 1 turn). Pay 2 more gold to draw a card.
+    Traits: [Cantrip]
+
+Furious Defender:
+    Miracle: 2
+    Description: Apply to a 0 miracle creature. Gains Divine Rage (all that pass through its range get attacked).
+
+Moment's Contemplation:
+    Gold: 3
+    Description: A chosen unit cannot attack a city next turn. Draw a card.
+
+Trapper's Net:
+    Gold: 4
+    Description: Snare units played for a cost that have total cost equaling 6 gold or less. Pay 2 more gold to draw a card.
+    Traits: [Cantrip, Unbalanced]
+
+Orloaf's Poison:
+    Gold: 1
+    Description: Then prevent 1 gold cost creatures for opponent's turn. Draw a card.
+    Traits: [Cantrip]
+
+## INFORMATION HIDING?? ##
+
+## PAULS CARDS ##
+
+Dog of War:
+    Gold: 2
+    Movement: 1
+    Attack: 1
+    Range: 1
+    Health: 1
+    Description: "Charge."
+
+Unleash the Dogs of War:
+    Gold: 5
+    Description: "Summon two dogs of war. Pay 1 more miracle to summon an additional one."
+
+Cannon Gnome:
+    Gold: 4
+    Miracle: 1
+    Attack: 6
+    Range: 3
+    Health: 1
+    Description: "The gnome will kill you if you don't kill it."
+
+# Structures
+
+# AD- VERY ROUGH. #
+
+War Tax Office:
+  Gold: 5
+  Miracle: 2
+  Health: 2
+  Attack: "-"
+  Range: "-"
+  Description: Gain 2 additional gold per turn to this structure's bank of capacity 10. 
+  Traits: ["Structure"]
+
+Shimmering Goldmine:
+  Gold: 0
+  Miracle: 1
+  Health: 1
+  Attack: "-"
+  Range: "-"
+  Description: Gain 1 additional gold per turn. 
+  Traits: ["Structure (3 turns)"]
+
+Sentinel Guild:
+  Gold: 0
+  Miracle: 1
+  Health: 3
+  Attack: "1"
+  Range: "1"
+  Description: "Sentinel. Sacrifice: Give one unit sentinel."
+  Traits: ["Structure"]
+
+Forcefield Monastery:
+  Miracle: 1
+  Health: 1
+  Attack: 1
+  Range: "1"
+  Description: Defence (-1 damage). All adjacent structures have this too.
+  Traits: ["Structure (4 turns)", "Limited"]
+
+Archery Range:
+  Gold: 5
+  Miracle: 1
+  Health: 3
+  Attack: 2
+  Range: "3"
+  Description: All adjacent structures have +2 range.
+  Traits: ["Structure (4 turns)", "Limited"]
+
+Castle of the Winds:
+  Gold: 5
+  Miracle: 1
+  Health: 3
+  Attack: 1
+  Range: "2"
+  Description: Attacks those who step in range. 
+  Traits: ["Structure (4 turns)", "Limited"]
+
+Barracks:
+  Gold: 5
+  Miracle: 1
+  Health: 3
+  Attack: 1
+  Range: "1"
+  Description: Counter (2 Damage). All adjacent structures have this too.
+  Traits: ["Structure (4 turns)", "Limited"]
+
+Fire Tower:
+  Gold: 7
+  Miracle: 1
+  Health: 2
+  Attack: 5
+  Range: "4"
+  Description: "Ritual Sacrifice: Deal 3 damage to a unit."
+  Traits: ["Structure (4 turns)", "Limited"]
+
+Palace of the War Festival:
+  Gold: 1
+  Miracle: 1
+  Health: 1
+  Attack: "-"
+  Range: "-"
+  Description: Gain 1 additional miracle and gold per turn. Lose 2 miracle if destroyed.
+  Traits: ["Structure (3 turns)", "Limited"]
+
+# Units
+
+Jazzy the Hobitling:
+  Gold: 2
+  Health: 2
+  Attack: 1
+  Movement: 2
+  Range: 1
+  Image: https://s-media-cache-ak0.pinimg.com/236x/07/1d/45/071d456119418d89a72cac191a2d74c5.jpg
+  Description: "Channel(2 Gold): Gain charge."
+  Traits: [Humanoid]
+
+Swordwisher:
+  Gold: 2
+  Miracle: 1
+  Health: 3
+  Attack: 3
+  Movement: 3
+  Range: 1
+  Image: http://lilianaintegratedproject09.wikispaces.com/file/view/Sling.gif/72581917/Sling.gif
+  Description: "The first time this unit gains additional Attack: All friendly units get Charge this turn."
+  Traits: [Godkin]
+
+Healthwisher:
+  Miracle: 1
+  Health: 3
+  Attack: 3
+  Movement: 2
+  Range: 2
+  Image: http://lilianaintegratedproject09.wikispaces.com/file/view/Sling.gif/72581917/Sling.gif
+  Description: "The first time this card has more than 2 health: All friendly units get +1 Movement."
+  Traits: [Godkin]
+
+Slingthrower:
+  Gold: 1
+  Health: 1
+  Attack: 1
+  Movement: 2
+  Range: 2
+  Image: http://lilianaintegratedproject09.wikispaces.com/file/view/Sling.gif/72581917/Sling.gif
+  Description: "Effective against creatures with Health 4 or more."
+  Traits: [Humanoid]
+
+Orc:
+  Gold: 3
+  Health: 4
+  Attack: 2
+  Movement: 2
+  Range: 1
+  Image: http://www.gdunlimited.net/forums/uploads/1289335297/gallery_16017_5_9218.png
+  Description: "Effective against structures."
+  Traits: [Humanoid]
+
+Ogre: # Needs to fit in a deck concept.
+  Gold: 5
+  Health: 5
+  Attack: 3
+  Movement: 2
+  Range: 1
+  Image: http://www.algadon.com/images/monsters/ogre.png 
+  Description: "Can Charge once."
+  Traits: [Humanoid]
+
+Rabid Dog:
+  Gold: 1
+  Health: 1
+  Attack: 1
+  Movement: 2
+  Range: 1
+  Description: "Counterattacks."
+  Traits: [Humanoid]
+
+Hobitling Archer:
+  Gold: 2
+  Health: 2
+  Attack: 1
+  Movement: 2
+  Image: 'https://cdn3.artstation.com/p/assets/images/images/000/427/815/large/frank-hessefort-halfling-ranger.jpg?1422015523'
+  Description: 'Channel(2 Gold): Attack with +1 Range.'
+  Range: 2
+  Traits: [Humanoid]
+
+Orc Powerarcher:
+  Gold: 4
+  Health: 2
+  Attack: 2
+  Movement: 2
+  Image: https://s-media-cache-ak0.pinimg.com/736x/fe/a2/b2/fea2b2e27dc64aed4228bb3697018436.jpg
+  Range: 2
+  Description: "Channel(Once): Gain charge."
+  Traits: [Humanoid]
+
+Marchsong Soldier:
+  Gold: 2
+  Health: 2
+  Attack: 2
+  Movement: 2
+  Range: 1
+  Image: http://vignette3.wikia.nocookie.net/urban-rivals/images/6/6e/LEADER_SOLOMON_N2_STD.png
+  Description: 'Ability(2 Gold): Move target friendly unit one square. That unit cannot attack this turn.'
+  Traits: [Humanoid]
+#  Description: "Alternate Move: Move one square and push a friendly unit in the direction of movement."
+Mercenary Soldier:
+  Gold: 2
+  Health: 3
+  Attack: 2
+  Movement: 2
+  Range: 1
+  Description: "When Mercenary Soldier invades a city, gain 1 gold for each of its city points."
+  Image: http://vignette3.wikia.nocookie.net/urban-rivals/images/6/6e/LEADER_SOLOMON_N2_STD.png
+  Traits: [Humanoid]
+
+Mercenary Goblin:
+  Gold: 2
+  Health: 2
+  Attack: 3
+  Movement: 1
+  Range: 1
+  Description: "Joined the fight, but his heart isn't into it."
+  Image: http://vignette3.wikia.nocookie.net/herebemonsters/images/f/fe/Green_Goblin.png
+  Traits: [Humanoid]
+
+Pillaging Goblin:
+  Gold: 2
+  Health: 2
+  Attack: 1
+  Movement: 2
+  Range: 1
+  Description: "On Attack: Gain 1 city point if invades a city."
+  Image: http://vignette3.wikia.nocookie.net/herebemonsters/images/f/fe/Green_Goblin.png
+  Traits: [Humanoid]
+
+Pious Elf:
+  Gold: 4
+  Health: 2
+  Attack: 1
+  Movement: 3
+  Range: 1
+  Description: "3 Gold: Soulstrike 1."
+  Traits: [Humanoid]
+
+#McNik the Bard:
+#  Miracle: 2
+#  Health: 2
+#  Attack: 2
+#  Description: "Creatures that would have 1 attack without this effect have 3 attack."
+#  Image: http://www.immediateentourage.com/ie/wp-content/uploads/2012/10/Man-Playing-Bagpipes.png
+#  Movement: 2
+#  Range: 2
+#  Traits: [Humanoid]
+
+McFard the Bard:
+  Gold: 5
+  Health: 3
+  Attack: 2
+  Description: "Units on your side of the field have +1 attack."
+  Image: http://www.immediateentourage.com/ie/wp-content/uploads/2012/10/Man-Playing-Bagpipes.png
+  Movement: 2
+  Range: 1
+  Traits: [Humanoid]
+
+Primordial Weaver:
+  Gold: 4
+  Health: 2
+  Attack: 2
+  Description: "Ability (1 Miracle): Move a unit one square."
+  Image: http://vignette3.wikia.nocookie.net/monsterhunter/images/0/0e/FrontierGen-Abiorugu_Render_002.png/revision/latest?cb=20120113151539
+  Movement: 2
+  Range: 1
+  Traits: [Primordial]
+
+Primordial Spiderkin:
+  Gold: 1
+  Health: 1
+  Attack: 2
+  Description: "Has 4 movement first turn."
+  Image: http://vignette3.wikia.nocookie.net/monsterhunter/images/0/0e/FrontierGen-Abiorugu_Render_002.png/revision/latest?cb=20120113151539
+  Movement: 2
+  Range: 1
+  Traits: [Primordial]
+
+Primordial Beast:
+  Gold: 4
+  Health: 3
+  Attack: 3
+  Description: "Cannot be attacked by a charge."
+  Image: http://vignette3.wikia.nocookie.net/monsterhunter/images/0/0e/FrontierGen-Abiorugu_Render_002.png/revision/latest?cb=20120113151539
+  Movement: 2
+  Range: 1
+  Traits: [Primordial]
+
+Primordial Steed:
+  Gold: 3
+  Health: 3
+  Attack: 3
+  Movement: 3
+  Image: https://s-media-cache-ak0.pinimg.com/736x/fe/a2/b2/fea2b2e27dc64aed4228bb3697018436.jpg
+  Range: 1 
+  Description: "Pay 1 Miracle to Charge first turn."
+  Traits: [Humanoid]
+
+Primordial Beast:
+  Gold: 4
+  Health: 3
+  Attack: 3
+  Description: "Channel(2 Gold): Gain 1 attack."
+  Image: http://vignette3.wikia.nocookie.net/monsterhunter/images/0/0e/FrontierGen-Abiorugu_Render_002.png/revision/latest?cb=20120113151539
+  Movement: 2
+  Range: 1
+  Traits: [Primordial]
+
+Plumbus the Wizard:
+    Gold: 6
+    Miracle: 1
+    Movement: 2
+    Health: 3
+    Attack: 3
+    Range: 2
+    Image: http://i.imgur.com/n6fMi0A.png
+    Description: "2 Gold: Soulstrike 3."
+    Traits: [Humanoid, Limited]
+
+Laurisa of Shutout:
+    Gold: 2
+    Miracle: 1
+    Health: 2
+    Attack: 2
+    Movement: 2
+    Range: 1
+    Description: "While Laurisa is in play, rituals may not begin."
+    Traits: [Godkin, Limited]
+
+Santafaya the Counterpriest:
+    Gold: 3
+    Miracle: 1
+    Health: 3
+    Attack: 1
+    Range: 3
+    Movement: 3
+    Description: "Enemy units who move into range of Santafaya lose Aegis, Charge and Sentinel for a turn."
+    Traits: [Godkin]
+
+Soulshot:
+    Gold: 4
+    Health: 2
+    Attack: 1
+    Range: 1
+    Movement: 1
+    Description: "Soulstrike 1."
+    Traits: [Godkin]
+
+Divine Carpenter:
+    Gold: 3
+    Miracle: 1
+    Health: 3
+    Attack: 2
+    Range: 1
+    Movement: 2
+    Description: "3 Gold: Ritual -- Put a 1/1/2/2/Godkin unit onto the board named 'Puppet of God'."
+    Traits: [Godkin]
+
+Sellsword:
+    Gold: 5
+    Health: 4
+    Attack: 3
+    Movement: 2
+    Range: 1
+    Description: "Channel(1 Miracle): Gain Aegis and +1 range."
+    Traits: [Humanoid]
+
+Marksman:
+    Gold: 3
+    Health: 2
+    Range: 3
+    Attack: 1
+    Movement: 1
+    Image: http://vignette3.wikia.nocookie.net/elderscrolls/images/9/97/Class_creation_archer.png/revision/latest?cb=20120310213944
+    Description: "Effective against units with Range 1 or less."
+
+Singlar the Martyr:
+    Gold: 2
+    Health: 2
+    Movement: 2
+    Image: http://www.adressformona.org/bahai/martyr1.jpg
+    Description: "Ritual: If on opponent's side, sacrifice and deal 3 faith damage."
+    Attack: 0
+    Range: 1
+
+Angel of Dano:
+    Miracle: 4
+    Description: "Begins play snared. Ritual: Remove snare."
+    Gold: 0
+    Health: 5
+    Movement: 3
+    Range: 3
+    Attack: 5
+
+####### End of basic/unthemed cards, mostly by Adam. #############
+####### Start of Alex's deck #############
+
+Nanobots roll out:
+    Gold: 3
+    Description: place 2 Clockwork servants in your homerow
+
+# I made this more general purpose.
+Curse of Flesh:
+    Gold: 5
+    Description: "Destroy target Humanoid with Health 5 or less. Sacrifice a Humanoid: Apply to any target if you sacrifice a humanoid."
+
+Overdrive:
+    Gold: 4
+    Description: target machine may strike twice this turn. at the end of your turn destroy that robot.
+
+Blast Shield:
+    Gold: 3
+    Description: Target unit gains Aegis. 
+
+Recall:
+    Gold: 3
+    Description: Draw card, Return a friendly machine to your hand.
+    Traits: [Cantrip]
+
+Cantrip Boost:
+    Gold: 2
+    Description: Draw a card, Target machine gains +2M until your next turn.
+    Description: Target Machine gains +2 Movement until your next turn. Draw a card.
+    Traits: [Cantrip]
+
+Clockwork Congregation:
+    Gold: 2
+    Miracle: 1
+    Description: Choose one of your temples, you may uprgade it once.
+
+Overclock CPU:
+    Gold: 2
+    Miracle: 1
+    Description: "target friendly mech gains +1M and charge this turn, at the end of turn snare that unit"
+    
+Emergency Tech Support:
+    Miracle: 3
+    Description: All Machine units are healed and gain +2 Health.
+
+Orloafs arrogance:
+    Gold: 3
+    Description: "choose a friendly and an enemy unit and deal 2 damage to both, draw a card"
+    Traits: [Cantrip]
+    
+Increased Celerity:
+    Gold: 5
+    Miracle: 1
+    Description: All friendly Machine units gain +2 Movement until end of turn.
+
+Magnetic field:
+    Gold: 5
+    Description: "Blast(3x3): Units have Movement 0 until your next turn."
+
+Forced Assimilation:
+    Gold: 4
+    Miracle: 1
+    Description: Draw a card for each Machine you control.
+
+Mantra of silence:
+    Gold: 0
+    Description: "Ritual: Target unit loses all lines of text. Pay the unit's miracle cost."
+    Ritual: [Ritual]
+
+Guard Duty:
+  Gold: 4
+  Description: "Target friendly unit gains Sentinel. It's Movement is 0 until your next turn. Draw a card."
+  Traits: [Cantrip]   
+
+Orloafs sire:
+    Gold: 1
+    Health: 2
+    Attack: 1
+    Movement: 1
+    Range: 1
+    Description: "Ability(sacrifice): the next machine you summon costs 2 less gold"
+    Traits: [Machine]
+
+Clockwork servant:
+  Gold: 1
+  Health: 2
+  Attack: 0
+  Movement: 2
+  Range: 1
+  Description: "Channel(1 Miracle): Give a friendly machine in range +2 attack and +1 health until your next turn."
+  Traits: [Machine]
+
+Adaptotron:
+  Gold: 3
+  Miracle: 2
+  Health: 1
+  Attack: 1
+  Movement: 1
+  Range: 1
+  Description: 'On Summon: You may replace Adaptotron with a copy of a friendly Machine.'
+  Traits: [Machine]
+
+Clockwork Soldier:
+  Gold: 2
+  Health: 4
+  Attack: 2
+  Movement: 1
+  Range: 1
+  Description: Programmed to kill.
+  Traits: [Machine]
+
+Clockwork Priest:
+  Gold: 4
+  Miracle: 2
+  Health: 3
+  Attack: 1
+  Movement: 2
+  Range: 3
+  Description: "Channel(5 Gold): Give all machines in range +2 attack and +1 movement until your next turn."
+  Traits: [Machine]
+
+Clockwork Angel:
+  Gold: 6
+  Miracle: 1
+  Health: 5
+  Attack: 2
+  Movement: 2
+  Range: 3
+  Description: 'Flight. Ability(6 Gold): Restore all other Machines units, within Range, to their base Health.'
+  Traits: [Machine]
+
+"Orloaf, the augmented one":
+  Gold: 7
+  Miracle: 2
+  Health: 5
+  Attack: 2
+  Movement: 2
+  Range: 2
+  Description: "when Orloaf is summoned search your deck for up to two cantrips and/or 1 gold cost creatures, reveal them and put them in your hand. You may play them without paying the cost this turn."
+  Traits: [Human, Machine]
+  
+Clockwork Golem:
+  Gold: 8
+  Miracle: 1
+  Health: 10
+  Attack: 5
+  Movement: 1
+  Range: 1
+  Image: 'https://dungeonmusings.files.wordpress.com/2015/03/robot-golem.png'
+  Description: Sentinel. This unit may not move and attack in the same turn.
+  Traits: [Machine]
+
+Clockwork Knight:
+  Gold: 4
+  Health: 4
+  Attack: 3
+  Movement: 1
+  Range: 1
+  Description: Counterstrike.
+  Traits: [Machine]
+
+Clockwork Zealot:
+  Gold: 4
+  Health: 1
+  Attack: 0
+  Movement: 2
+  Range: 3
+  Description: 'Counterstrike. If this unit Soulstrikes, destroy it. Ritual(3 Gold): Gain Soulstrike 3.'
+  Traits: [Machine]
+
+Clockwork Lancer:
+   Gold: 5
+   Health: 4
+   Attack: 2
+   Movement: 1
+   Range: 1
+   Description: 'Channel(3 Gold): This unit gains +1 Attack, and +1 Range.'
+   
+   #####End on machines#####
+   
+Shoggoth, the Lidless:
+   Gold: 10
+   Miracle: 2
+   Pop: 4
+   Health: 7
+   Attack: 3
+   Movement: 3
+   Range: 1
+   Image: https://upload.wikimedia.org/wikipedia/en/9/95/Shuma_Gorath.jpg
+   Description: "Ability(1 Miracle):deal 3 damage at range 3, only once per turn. Costs 1 less gold for each eye unit on board"
+   Traits: [Eye, Limited]
+   
+Shoggoth's Hounds:
+   Gold: 2
+   Pop: 1
+   Health: 2
+   Attack: 2
+   Movement: 3 
+   Range: 1
+   Description: "Hit and Run"
+   Image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHbmbsQSq92CnsG0FYUWeKzRS1SaAlF3SrfT6xFaq4BNNCWZpD
+   Traits: [Eye]
+   
+Flying Pleb:
+   Gold: 1
+   Pop: 1
+   Health: 2
+   Attack: 1
+   Movement: 3
+   Range: 1 
+   Description: "On Death: Gain +2 gold."
+   Image: https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjGEieHo-PtZ1jFgXWKtL20l-6-Mhd690tXEJNVQi2x5Lj6ujLmg
+   Taits: [Flying, Eye]
+   
+Eyeball Seer:
+   Gold: 4
+   Pop: 2
+   Health: 3
+   Attack: 2
+   Movement: 2
+   Range: 1
+   Description: "Ability(1 Miracle): Search your deck for an Eye unit. Reveal and put it in your hand, shuffle your deck"
+   Image: https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZAIdI2g7Lstooxak8-s1ik4rxQco1eg00To_Mzl7yPMgpVxnK_w
+   Traits: [Eye,Sentinel]
+   
+Flaming Oculos:
+   Gold: 4
+   Pop: 3
+   Attack: 3
+   Movement: 3
+   Range: 2
+   Description: "Counter(attack). Ability(1 Miracle): deal 1 damage at 4 range."
+   Image: https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRArvTK2z9DLlJVVYp5q-PuGXq3C5It99getZsltZzmo0mFJhLBxw
+   Traits: [Eye, Flying]
+####### End of Alex's deck #############
+
+
+####### Start of Matt's cards #############
+
+Gallanthor The Self Righteous:
+  Gold: 6
+  Miracle: 2
+  Health: 2
+  Attack: 4
+  Movement: 5
+  Range: 1
+  Image: http://static.giantbomb.com/uploads/scale_small/1/17172/1629526-black_knight_by_trejoeeee.jpg
+  Description: "Channel(1 Miracle): Gain Aegis OR Charge."
+  Traits: [Humanoid, Limited]
+  
+Herald of Kizzinex:
+  Gold: 4
+  Health: 2
+  Attack: 1
+  Movement: 2
+  Range: 3
+  Image: http://img10.deviantart.net/b7e2/i/2015/027/c/3/shadow_priest_by_zynthex-d8fo54g.png
+  Description: "On Attack: Target is immobile for next turn."
+  Traits: [Humanoid, Priest]
+  
+Worthy Sacrifice:
+  Gold: 2
+  Image: http://3.bp.blogspot.com/-xBxtZMwKfWs/Uy0aZes432I/AAAAAAAAAuE/-G7rbS1s5ck/s1600/Drown+in+Sorro.jpg
+  Description: 'Ritual: Each player destroys target friendly unit if possible. If you control no units, Worthy Sacrifice does nothing.'
+
+Ritual of The Dreamer:
+  Image: "http://img12.deviantart.net/7b47/i/2006/124/7/e/summoning_circle_by_pheonix34.jpg"
+  Description: "Sacrifice up to 2 units on your opponent's side and add their total cost. Ritual: Play a unit directly from your deck with no more than this total cost."
+
+Decrepit Cultist:
+ Gold: 1
+ Health: 1
+ Attack: 1
+ Movement: 1
+ Range: 2
+ Image: https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNaVrAuwpKrUlKQ0hsmPmdLCpGNFcgZ0X97fRfk1ZAONqorjbnLg
+ Description: "On Death: Draw a card."
+ Traits: [Human, Fanatic]
+
+Kizzinex the Bemused:
+  Gold: 3
+  Miracle: 2
+  Health: 5
+  Attack: 2
+  Movement: 2
+  Range: 3
+  Image: http://static.giantbomb.com/uploads/scale_small/16/163828/2335935-black_dragon_kalameet.jpg
+  Description: "Kizzinex attacks all targets in the direction he attacks. Lifelock: 'Kizzinex the Dormant' "
+  Traits: [Celestial Aspect, Kizzinex]
+
+Kizzinex the Dormant:
+  Gold: 3
+  Miracle: 2
+  Health: 5
+  Attack: 1
+  Movement: 
+  Range: 1
+  Image: http://www.colinrichardsart.com/pencilimages/sleeping%20dragon%20by%20colin%20richards.jpg
+  Description: "At the end of the turn, destroy all units within 1 range. Lifelock: 'Kizzinex the Bemused'."
+  Traits: [Celestial Aspect, Kizzinex]
+
+Kizzinex the Eternal:
+  Gold: 5
+  Miracle: 5
+  Health: 8
+  Attack: 5
+  Movement: 4
+  Range: 3
+  Image: http://static.tumblr.com/035acb0b58af07d9d47823bac469bf67/cjlucyi/VSqnezu28/tumblr_static_9dcn7fv7srokwwgo4ws840o80.jpg
+  Description: "Channel(Once): Gain Aegis. On Summon: Destroy all units in a lane. On Attack: All units in range are hit."
+  Traits: [Elder God, Kizzinex]
+
+Feast of the Damned:
+  Gold: 6
+  Miracle: 1
+  Image: http://img01.deviantart.net/46d0/i/2015/296/c/1/ritual_of_souls_by_christylerthe1st-d9e3ptv.png
+  Description: "Blast(4 in a line): Sacrifice all units. This turn only, gain gold equal to their combined health."
+  Traits: [Legendary Spell, Unique, TEST SPELL]
+
+Flicker of Madness:
+  Gold: 6
+  Miracle: 1
+  Image: "http://img06.deviantart.net/9810/i/2014/329/c/b/insanity_by_berkozturk-d5mcbdu.jpg"
+  Description: "All units that died last turn are resummoned. On Summon: They gain charge and +4 range. Minions summoned this way die at the end of the turn."
+  Traits: [Legendary Spell, Unique, TEST SPELL]
+
+Celestial Strike:
+  Gold: 6
+  Miracle: 1
+  Image: http://vignette2.wikia.nocookie.net/wowwiki/images/0/06/HolyWrathTCG.jpg
+  Description: "Deal 8 damage to a target. Chain to all connected units: Deal 1 damage and gain 1 faith."
+  Traits: [Legendary Spell, Unique, TEST SPELL]
+
+Wandering Soul:
+  Gold: 5
+  Miracle: 1
+  Health: 3
+  Attack: 3
+  Movement: 3
+  Range: 3
+  Description: "Sacrifice this unit: Gain 1 Miracle."
+  
+Fanatical Brute:
+  Gold: 3
+  Health: 3
+  Attack: 2
+  Movement: 2
+  Range: 1
+  Description: "When Fanatical Brute destroys a unit with miracle cost 1 or more: Gain 1 miracle."
+  Traits: [Human,Fanatic]
+
+Moment's Rest:
+  Gold: 3
+  Miracle: 1
+  Description: "All your units gain Aegis for the next turn."
+
+Kangaxx, Master of the Arcane:
+  Gold: 6
+  Miracle: 3
+  Health: 5
+  Attack: 2
+  Range: 2
+  Movement: 2
+  Description: "Soulstrike 1. Channel(2 Gold): Aegis."
+  Traits: [Undead, Lich]
+
+
+####### End of Matt's cards #############
+##AO- we should also make a list of established keywords and what they do exactly.##
+#Soulstrike-deals an indicated amount of damage to player directly if their holy ground is within range of the creaure#
+#Aegis prevents all damage until the beginning of your next turn#
+#Sentinel makes it so that if a creature wants to att a player directly but is within range of a creture with sentinel. he must attack that creature istead#
+#Flight- can fly over obstacles and units#
+#counter- when attacked by a creature within its range the creaure with counter also deals an indicated amount of dmg back#
+#Channel- infuse creature with gold to make it better untill your next turn. all units can only channel once a turn#
+#ritual- after the cost is paid the effect of a ritual ability does not happen until the beginning of your next turn and will not happen if the unit dies#
+#soulbound- when one of the two units which are bound dies, the other one is immidiately removed from play#
+#ability- after a cost is paid the units ability takes place right away. can be used more than once unless specified #
+#Defence- subtracts amount from damage taken from unit attacks
+
+## SAMIR CARDS ##
+
+Delayed Retaliation:
+  Gold: 9
+  Miracle: 9
+  Image: 'http://i1.kym-cdn.com/photos/images/facebook/000/288/625/69c.png'
+  Description: "Destroy all enemy units. Destroy all Rituals. Destroy all Structures. Draw 5 cards."
+  Traits: [Unbalanced]
+
+Devotion to the Gods:
+  Miracle: (removed)
+  Description: (removed)
+  Trait: (removed)
+  Miracle: 1
+  Description: 'Gain 2 Gold. Return this card to your hand, then if you have 0 Miracle, you lose all Gold and discard this card.'
+
+Disarm:
+  Miracle: 1
+  Description: Target unit loses attack equal to its base attack value.
+
+Giant Eagle:
+  Gold: 5
+  Health: 3
+  Attack: 1
+  Range: 2
+  Movement: 3
+  Description: Flight
+  Traits: [Beast]
+
+Glorious Dragon:
+  Gold: 9
+  Health: 8
+  Attack: 2
+  Range: 2
+  Movement: 5
+  Image: 'http://pngimg.com/upload/dragon_PNG994.png'
+  Description: Flight
+  Traits: [Beast]
+
+"It's All Ogre Now":
+  Gold: 4
+  Miracle: 1
+  Description: "Search your deck for a card named 'Ogre' and summon that card ignoring all costs. Shuffle your deck afterwards."
+
+Traitorous Offer:
+  Gold: 8
+  Image: 'https://i.warosu.org/data/fa/img/0072/33/1384291766378.png'
+  Description: Gain control of target enemy unit. Your opponent gains 1 Miracle
+  Traits: [Unbalanced]
